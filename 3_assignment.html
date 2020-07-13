@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>
+Day 1 assignment 3 of javascript 
+</title>
+
+</head>
+<body>
+<h1 id="gg"></h1>
+<h1 id="h11"></h1>
+<h1 id="h22"></h1>
+<h1 id="gf"></h1>
+<h1 id="o"></h1>
+<h1 id="oo"></h1>
+</body>
+<script>
+var sc=new Date()
+var m=sc.getMonth()
+var m=m+1
+if(m>=10)
+{
+document.write(sc.getDate(),"-",m,"-",sc.getFullYear())
+document.write(sc.getDate(),"/","0",m,"/",sc.getFullYear())
+}
+else
+{
+    document.getElementById('gg').innerHTML="1st method"
+    document.getElementById('h11').innerHTML="0"+m+"-"+sc.getDate()+"-"+sc.getFullYear()
+    document.getElementById('h22').innerHTML="0"+m+"/"+sc.getDate()+"/"+sc.getFullYear()
+    document.getElementById('gf').innerHTML="2nd method"
+    document.getElementById('o').innerHTML=sc.getDate()+"-"+"0"+m+"-"+sc.getFullYear()
+    document.getElementById('oo').innerHTML=sc.getDate()+"/"+"0"+m+"/"+sc.getFullYear()
+
+}
+</script>
+</html>
